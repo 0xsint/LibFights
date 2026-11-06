@@ -26,25 +26,28 @@ If neither menu library is installed, everything still works through the Lua API
 
 ## Documentation and examples
 
-- **[API.html](API.html)**: the full API reference. It's searchable and shows every function, what it returns (including the `false`/`nil` cases) and every data structure. Open it in any browser.
+- **[API Reference](API%20Reference.md)**: the full API reference in Markdown. Every function, what it returns (including the `false`/`nil` cases), every data structure, a quick start and 13 add-on examples.
+- **[API.html](API.html)**: the same reference as a searchable page with Copy buttons on the examples. Open it in any browser.
 - **[API.txt](API.txt)**: the same reference as plain text.
-- **[Add-on examples](API.html#examples)**: 13 complete add-ons built on LibFights, each with a Copy button:
+- **[LibFights-Examples](../LibFights-Examples/README.md)**: the 13 examples as ready-to-install add-on folders, one per example. The folder sits next to `LibFights`, not inside it: ESO loads add-ons nested up to three folders deep, so examples inside LibFights would run for everyone who installs the library.
+
+[Add-on examples](API%20Reference.md#add-on-examples):
 
 | Example | What it does |
 |---|---|
-| [Auto-logger](API.html#ex-auto-logger) | Starts logging in combat, prints the fight summary, stops again. Includes the manifest. |
-| [Live DPS meter](API.html#ex-live-meter) | Movable window with live DPS, HPS and SPS. |
-| [Personal bests](API.html#ex-personal-bests) | Saves your best DPS per boss in SavedVariables. |
-| [Top abilities with icons](API.html#ex-top-abilities) | `/topdmg` and `/topheal`: top 5 abilities with icons, share and crit rate. |
-| [Set and proc report](API.html#ex-set-report) | Each set's damage share, uptime, procs per minute and proc cooldowns. |
-| [Tank and shield report](API.html#ex-tank-report) | Damage taken, mitigated and shielded, shield use, damage reduction, top attackers. |
-| [Penetration check](API.html#ex-pen-check) | `/pencheck`: target resistance and the penetration you're missing. |
-| [Death recap](API.html#ex-death-recap) | The last 5 hits before you died. |
-| [Build reader and change alert](API.html#ex-build-reader) | `/mybuild`, plus what changed in your build between fights. |
-| [Boss kill timer](API.html#ex-boss-timer) | Warns when the boss has under 10 seconds left. |
-| [Settings panel](API.html#ex-settings-panel) | LibAddonMenu on PC, LibHarvensAddonSettings on console. |
-| [Search command](API.html#ex-search-command) | `/lfs`: search abilities, sets and fights. |
-| [Big crit counter](API.html#ex-big-crits) | Counts your crits over 20k with the event query. |
+| [Auto-logger](API%20Reference.md#auto-logger) | Starts logging in combat, prints the fight summary, stops again. Includes the manifest. |
+| [Live DPS meter](API%20Reference.md#live-dps-meter) | Movable window with live DPS, HPS and SPS. |
+| [Personal bests](API%20Reference.md#personal-bests) | Saves your best DPS per boss in SavedVariables. |
+| [Top abilities with icons](API%20Reference.md#top-abilities-with-icons) | `/topdmg` and `/topheal`: top 5 abilities with icons, share and crit rate. |
+| [Set and proc report](API%20Reference.md#set-and-proc-report) | Each set's damage share, uptime, procs per minute and proc cooldowns. |
+| [Tank and shield report](API%20Reference.md#tank-and-shield-report) | Damage taken, mitigated and shielded, shield use, damage reduction, top attackers. |
+| [Penetration check](API%20Reference.md#penetration-check) | `/pencheck`: target resistance and the penetration you're missing. |
+| [Death recap](API%20Reference.md#death-recap) | The last 5 hits before you died. |
+| [Build reader and change alert](API%20Reference.md#build-reader-and-change-alert) | `/mybuild`, plus what changed in your build between fights. |
+| [Boss kill timer](API%20Reference.md#boss-kill-timer) | Warns when the boss has under 10 seconds left. |
+| [Settings panel](API%20Reference.md#settings-panel) | LibAddonMenu on PC, LibHarvensAddonSettings on console. |
+| [Search command](API%20Reference.md#search-command) | `/lfs`: search abilities, sets and fights. |
+| [Big crit counter](API%20Reference.md#big-crit-counter) | Counts your crits over 20k with the event query. |
 
 Slash commands only work on PC. On console, start and stop logging from a settings page like the Settings panel example.
 
@@ -72,6 +75,8 @@ Slash commands only work on PC. On console, start and stop logging from a settin
 | `Init.lua` | Loads saved data and builds the UI (does not start logging) |
 
 ## API
+
+This is a short overview. The complete reference is **[API Reference.md](API%20Reference.md)**.
 
 ### Logging
 ```lua

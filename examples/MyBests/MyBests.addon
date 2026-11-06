@@ -1,0 +1,7 @@
+## Title: My Bests
+## Author: you
+## Version: 1.0.0
+## APIVersion: 101047 101048
+## DependsOn: LibFights
+## SavedVariables: MyBestsSV
+MyBests.lua

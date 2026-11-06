@@ -1,0 +1,7 @@
+## Title: Search command
+## Author: you
+## Version: 1.0.0
+## APIVersion: 101047 101048
+## DependsOn: LibFights
+
+MySearch.lua

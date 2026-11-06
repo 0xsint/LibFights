@@ -1,0 +1,7 @@
+## Title: Build reader and change alert
+## Author: you
+## Version: 1.0.0
+## APIVersion: 101047 101048
+## DependsOn: LibFights
+
+MyBuild.lua
